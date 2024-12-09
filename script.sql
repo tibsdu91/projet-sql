@@ -44,7 +44,10 @@ INSERT INTO Humain (ID, Name, Post, Seniority) VALUES
 (2, 'Bob', 'Technicien', 3),
 (3, 'Clara', 'Chercheur', 8),
 (4, 'David', 'Pilote', 2),
-(5, 'Emma', 'Mécanicien', 6);
+(5, 'Emma', 'Mécanicien', 6),
+(6, 'Thibault', 'Analyste', 4),
+(7, 'Bastien', 'Superviseur_ethique', 7),
+(8, 'Donald', 'Administrateur', 10);
 
 INSERT INTO Action (ID, Description, StartDate, EndDate) VALUES
 (1, 'Réparation du générateur principal', '2024-12-01 10:00:00', '2024-12-01 12:00:00'),
