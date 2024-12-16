@@ -264,7 +264,7 @@ INSERT INTO RapportIncidence (ID, LawViolation, Description, ActionID, RobotID, 
 (8, 2, 'Conflit avec un autre robot', 4, 3, NULL);
 
 
--- supression des potentielles droit d'accès
+-- supression des potentiels droit d'accès
 DROP USER IF EXISTS 'admin'@'localhost';
 DROP USER IF EXISTS 'analyste'@'localhost';
 DROP USER IF EXISTS 'technicien'@'localhost';
