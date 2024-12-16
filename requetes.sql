@@ -20,7 +20,7 @@ JOIN Action ON RapportIncidence.ActionID = Action.ID
 GROUP BY Action.Description
 ORDER BY IncidentCount DESC;
 
--- lise tous les robots disparus qui ont été associés à un incident dans la base de données.
+-- liste tous les robots disparus qui ont été associés à un incident dans la base de données.
 SELECT Robot.Name
 FROM Robot
 WHERE State = 'Disparu'
@@ -32,7 +32,7 @@ SELECT LawViolation, COUNT(*) AS Frequency
 FROM RapportIncidence
 GROUP BY LawViolation;
 
--- calcule du temps moyen de la requette
+-- calcule du temps moyen de la requete
 SELECT AVG(TIMESTAMPDIFF(MINUTE, StartDate, EndDate)) AS AverageDuration
 FROM Action
 WHERE ID IN (SELECT ActionID FROM RapportIncidence);
